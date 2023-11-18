@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="km">
+<head>
+  <head>
+    <style>
+     img {
+       position: absolute;
+       top: 30px;
+       right: 30px;
+       width: 100px;
+       height: auto;
+       opacity: 0.6;
+       z-index: 1;
+     }
+   </style>
+    <link href='https://raw.githack.com/Seiha888/JWPlayer/main/Skin%20Netflix%20v2.0.5.css' rel='stylesheet'/>
+	<title>bongseiha.com</title>
+	</head>
+<body>
+      <!-- Include JW Player library -->
+  <img src="https://i.imgur.com/umTyaSP.png" />
+  <script src='https://raw.githack.com/Killer-GR/PlayerCode/main/DooPlay%20Licenkey.js' type='text/javascript'></script>
+  <script type="text/javascript">
+    jwplayer.key='ypdL3Acgwp4Uh2/LDE9dYh3W/EPwDMuA2yid4ytssfI=';
+  </script>
+  <div id="myElement"></div>
+  <script type="text/javascript">
+    jwplayer("myElement").setup( {
+            image: "#",
+            aspectratio: "16:9",
+            width: '100%',
+            aspectratio: '16:9',
+            autostart: true,
+            file : 'https://bigf.bigo.sg/asia_live/V4s6/0ThTlM.mp4',
+            "tracks": [ {
+                "kind": "captions",
+                "file": "https://res.cloudinary.com/do6y36zmq/raw/upload/v1679718489/khmer%20sub/Jwanita.2015.WEBRip.Netflix.en.km_z8k03m.srt",
+                "label": "Khmer",
+              	 default: true
+            }
+            , {
+                "kind": "captions",
+                "file": "https://res.cloudinary.com/do6y36zmq/raw/upload/v1679718489/khmer%20sub/Jwanita.2015.WEBRip.Netflix.en.km_z8k03m.srt",
+                "label": "English"
+            }
+            ],
+            abouttext: 'bongseiha',
+            aboutlink: 'www.bongseiha.com',
+            captions: {
+            color: '#f7f5f5', fontSize: 16, backgroundOpacity: 10
+            }
+            ,
+        }
+    )
+  </script>
+</html>
