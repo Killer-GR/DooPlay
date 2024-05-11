@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JW Player Example</title>
+    <!-- Include the JW Player library -->
+    <script src="https://raw.githack.com/Killer-GR/PlayerCode/main/cdnjwplayer.js"></script>
+</head>
+<body>
+    <div id="myPlayer"></div>
+
+    <script>
+        // Initialize JW Player
+        var player = jwplayer("myPlayer");
+
+        // Setup JW Player configuration
+        player.setup({
+            file: "//d26g9edzsm67nl.cloudfront.net/stagoutput/1715305111-663d7a97038a9.mp4", // Replace "your-video-url.mp4" with your actual video URL
+            width: "100%",
+            aspectratio: "16:9", // Set your preferred aspect ratio
+            autostart: false, // Set to true if you want the video to start playing automatically
+            controls: true, // Set to false if you want to hide player controls
+            tracks: [{
+                file: "https://res.cloudinary.com/do6y36zmq/raw/upload/v1715306956/eng%20sub/Trinil.Kembalikan.Tubuhku.2023.INDONESIAN.WEBRip.NF.en_uaup3c.srt",
+                label: "English",
+                kind: "captions",
+                default: true // Set to true if this is the default subtitle
+            },
+            {
+                file: "https://res.cloudinary.com/do6y36zmq/raw/upload/v1715306934/khmer%20sub/Trinil.Kembalikan.Tubuhku.2023.INDONESIAN.WEBRip.NF.en.km_obzawb.srt",
+                label: "Khmer",
+                kind: "captions"
+            }]
+            // Add any other configuration options here
+        });
+    </script>
+</body>
+</html>
